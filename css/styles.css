@@ -1,0 +1,25 @@
+#gallery {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 60px;
+}
+
+.gallery_image {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  width: 400px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
