@@ -14,20 +14,20 @@
     <button type="button" data-action="increment">+1</button>
 </div> */
 
-
-
-let counterValue = 0;
-function increment(){
-	counterValue +=1;
-  document.getElementById('value').innerHTML = counterValue;
+let counterValue = 0;
+let refValue = document.getElementById("value");
+function increment() {
+  counterValue += 1;
+  refValue.innerHTML = counterValue;
 }
-function decrement(){
-	counterValue -=1;
-  document.getElementById('value').innerHTML = counterValue;
+function decrement() {
+  counterValue -= 1;
+  refValue.innerHTML = counterValue;
 }
 
-document.querySelector('[data-action="decrement"]').addEventListener('click', decrement);
-document.querySelector('[data-action="increment"]').addEventListener('click', increment);
-
-
-
+document
+  .querySelector('[data-action="decrement"]')
+  .addEventListener("click", decrement);
+document
+  .querySelector('[data-action="increment"]')
+  .addEventListener("click", increment);
