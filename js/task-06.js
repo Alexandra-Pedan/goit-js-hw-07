@@ -1,4 +1,4 @@
-//  Напиши скрипт, который бы при потере фокуса на инпуте, проверял его содержимое на правильное количество символов.
+// Напиши скрипт, который бы при потере фокуса на инпуте, проверял его содержимое на правильное количество символов.
 
 // <input
 //   type="text"
@@ -13,25 +13,24 @@
 // #validation-input {
 //   border: 3px solid #bdbdbd;
 // }
-
 // #validation-input.valid {
 //   border-color: #4caf50;
 // }
-
 // #validation-input.invalid {
 //   border-color: #f44336;
 // }
-
-const input = document.querySelector("#validation-input");
+const input = document.querySelector('#validation-input');
 const inputLength = input.dataset.length;
+
 input.addEventListener("blur", onInputBlur);
 
 function onInputBlur() {
-  if (input.value.length == inputLength) {
-    input.classList.add("valid");
-    input.classList.remove("invalid");
-  } else {
-    input.classList.add("invalid");
-    input.classList.remove("valid");
-  }
+    if (input.value.length == inputLength) {
+        input.classList.add('valid');
+        input.classList.remove('invalid');
+    } else {
+        input.classList.add('invalid');
+        input.classList.remove('valid');
+    }
 }
+
